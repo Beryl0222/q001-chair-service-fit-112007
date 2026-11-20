@@ -1,0 +1,205 @@
+{
+  "models": [
+    {
+      "id": "M1",
+      "plate": "CY-B17",
+      "aliases": [
+        "轻帆",
+        "轻帆二代"
+      ],
+      "note": "浅湾门店首批。底盘小口，未更换时原脚架为短口。"
+    },
+    {
+      "id": "M2",
+      "plate": "CY-C17",
+      "aliases": [
+        "轻帆",
+        "轻帆二代"
+      ],
+      "note": "同一销售名，底盘大口。灰标为本批，坐垫标签沿用上批。"
+    },
+    {
+      "id": "M3",
+      "plate": "CY-D18",
+      "aliases": [
+        "轻帆城店款"
+      ],
+      "note": "底盘大口，门店供样专批。"
+    }
+  ],
+  "catalog": [
+    {
+      "id": "I1",
+      "part": "R48",
+      "authority": "engineering",
+      "note": "短杆接口四十八毫米，仅用于小口底盘。大口如装此杆，需配J03银弧转接座且脚架必须为F20。"
+    },
+    {
+      "id": "I2",
+      "part": "J03",
+      "authority": "engineering",
+      "note": "配R48，禁止与F19旧脚架同装，标牌出现CY-D18也不得使用。"
+    },
+    {
+      "id": "I3",
+      "part": "R52",
+      "authority": "engineering",
+      "note": "五点二厘米杆配大口底盘，可直接配F20，F19原脚架只适配小口组合。"
+    },
+    {
+      "id": "I4",
+      "part": "F20",
+      "authority": "engineering",
+      "note": "更新脚架，和大口组合需使用通告允许的杆与转接关系。"
+    },
+    {
+      "id": "I5",
+      "part": "J03",
+      "authority": "advertising",
+      "note": "银弧座适配轻帆二代，旧椅也即插即用。"
+    },
+    {
+      "id": "I6",
+      "part": "F19",
+      "authority": "engineering",
+      "note": "仅供原批小口，无转接座版本。"
+    }
+  ],
+  "service": [
+    {
+      "id": "S1",
+      "order": "OX1",
+      "phase": "来件",
+      "appointment": "2026-12-03",
+      "text": "灰牌磨没了，我猜和办公室的轻帆二代一样，之前大概没换过架。"
+    },
+    {
+      "id": "S2",
+      "order": "OX1",
+      "phase": "来件",
+      "associated": "S1",
+      "text": "师傅维修回单记得已拆下 F19，装的是 F20，初检抄牌 CY-C17。"
+    },
+    {
+      "id": "S3",
+      "order": "OX2",
+      "phase": "来件",
+      "appointment": "2026-12-03",
+      "text": "铭牌 CY-B17，要短杆，原脚还在，没有动过。"
+    },
+    {
+      "id": "S4",
+      "order": "OX3",
+      "phase": "来件",
+      "appointment": "2026-12-04",
+      "text": "铭牌 CY-C17，现装 F20，杆的肩部要 52，单位没记。"
+    },
+    {
+      "id": "S5",
+      "order": "OX1",
+      "phase": "承诺",
+      "associated": "S2",
+      "parts": [
+        "R48",
+        "J03"
+      ],
+      "branch": "浅湾",
+      "verified": [
+        "A2"
+      ]
+    },
+    {
+      "id": "S6",
+      "order": "OX4",
+      "phase": "出库",
+      "appointment": "2026-12-01",
+      "text": "初检 CY-C17，F20 脚架。",
+      "parts": [
+        "R48",
+        "J03"
+      ],
+      "branch": "浅湾"
+    },
+    {
+      "id": "S7",
+      "order": "OX1",
+      "phase": "复测",
+      "associated": "S2",
+      "text": "读到同批椅铭牌其实是 CY-D18，架仍为 F20。"
+    },
+    {
+      "id": "S8",
+      "order": "OX4",
+      "phase": "复测",
+      "associated": "S6",
+      "text": "确认发给该客户的椅也是 CY-D18。"
+    },
+    {
+      "id": "S9",
+      "order": "OX5",
+      "phase": "来件",
+      "associated": "S1",
+      "text": "同一来信另提到工位边的 CY-B17，椅面缝线脱开，与摇晃无关。"
+    }
+  ],
+  "inspection_cards": [
+    {
+      "id": "C1",
+      "channel": "远程",
+      "effort": 1,
+      "instruction": "站立查看靠背外露标签，抄完整铭牌，不推动座椅。"
+    },
+    {
+      "id": "C2",
+      "channel": "远程",
+      "effort": 2,
+      "instruction": "不挪椅，用手机照外侧即可看脚架银环；若外侧被遮住，记无法辨认。"
+    },
+    {
+      "id": "C3",
+      "channel": "远程",
+      "effort": 1,
+      "instruction": "仅在已经排除底盘与脚架松脱并确认直立时，空椅转动靠背核对哪一处晃动。"
+    },
+    {
+      "id": "C4",
+      "channel": "到店",
+      "effort": 8,
+      "instruction": "由维修员固定椅身后用批次卡对照底盘开口，必要时读取转接座刻印。"
+    }
+  ],
+  "replies": [
+    {
+      "id": "A1",
+      "order": "OX3",
+      "card": "C2",
+      "received": "2026-11-29",
+      "text": "外面被桌子挡住，没看出来，底盘还是会晃。"
+    },
+    {
+      "id": "A2",
+      "order": "OX1",
+      "card": "C1",
+      "received": "2026-11-27",
+      "text": "刚才对着灰牌读的是 C17，底盘没有挪过。"
+    },
+    {
+      "id": "A3",
+      "order": "OX1",
+      "card": "C2",
+      "received": "2026-11-29",
+      "text": "我说上次换过旧架，是师傅让我试着换上旧架，后来拆下。"
+    }
+  ],
+  "shipment": [
+    {
+      "id": "D1",
+      "order": "OX4",
+      "parts": [
+        "R48",
+        "J03"
+      ],
+      "branch": "浅湾"
+    }
+  ]
+}
