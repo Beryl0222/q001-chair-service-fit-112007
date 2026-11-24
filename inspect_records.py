@@ -4,6 +4,30 @@ import argparse
 import json
 from pathlib import Path
 
+# 决策引擎 advisor.py 中的常用名称也允许从本模块惰性导入，例如
+# ``from inspect_records import advise_order``。惰性加载避免循环导入。
+_ADVISOR_NAMES = {
+    "advise_order",
+    "analyze",
+    "parse_catalog",
+    "parse_dimensions",
+    "resolve_name",
+    "recommend_cards",
+    "liaison_dossier",
+    "liaison_index",
+    "independent_items",
+    "build_worlds",
+    "assess_kit",
+    "Session",
+}
+
+
+def __getattr__(name):
+    if name in _ADVISOR_NAMES:
+        import advisor
+        return getattr(advisor, name)
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+
 
 def load_records(path):
     """读取 UTF-8 资料并检查记录编号。"""

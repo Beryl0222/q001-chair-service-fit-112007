@@ -1,0 +1,3246 @@
+{
+  "alias_index": {
+    "轻帆": [
+      "M1",
+      "M2"
+    ],
+    "轻帆二代": [
+      "M1",
+      "M2"
+    ],
+    "CY-B17": [
+      "M1"
+    ],
+    "CY-C17": [
+      "M2"
+    ],
+    "轻帆城店款": [
+      "M3"
+    ],
+    "CY-D18": [
+      "M3"
+    ]
+  },
+  "catalog_rules": [
+    {
+      "source": "I1",
+      "part": "R48",
+      "kind": "part_only_mouth",
+      "payload": {
+        "part": "R48",
+        "mouth": "small"
+      },
+      "quote": "仅用于小口底盘",
+      "authority": "engineering"
+    },
+    {
+      "source": "I1",
+      "part": "R48",
+      "kind": "large_rod_requires",
+      "payload": {
+        "part": "R48",
+        "mouth": "large",
+        "adapter": "J03",
+        "base": "F20"
+      },
+      "quote": "大口如装此杆，需配J03银弧转接座且脚架必须为F20",
+      "authority": "engineering"
+    },
+    {
+      "source": "I2",
+      "part": "J03",
+      "kind": "forbidden_pair",
+      "payload": {
+        "part": "J03",
+        "other": "F19"
+      },
+      "quote": "禁止与F19旧脚架同装",
+      "authority": "engineering"
+    },
+    {
+      "source": "I2",
+      "part": "J03",
+      "kind": "forbidden_plate",
+      "payload": {
+        "part": "J03",
+        "plate": "CY-D18"
+      },
+      "quote": "标牌出现CY-D18也不得使用",
+      "authority": "engineering"
+    },
+    {
+      "source": "I3",
+      "part": "R52",
+      "kind": "rod_direct_fit",
+      "payload": {
+        "part": "R52",
+        "mouth": "large",
+        "base": "F20",
+        "dim_phrase": "五点二厘米"
+      },
+      "quote": "五点二厘米杆配大口底盘，可直接配F20",
+      "authority": "engineering"
+    },
+    {
+      "source": "I3",
+      "part": "R52",
+      "kind": "base_only_mouth",
+      "payload": {
+        "base": "F19",
+        "mouth": "small"
+      },
+      "quote": "F19原脚架只适配小口组合",
+      "authority": "engineering"
+    },
+    {
+      "source": "I4",
+      "part": "F20",
+      "kind": "large_base_noticed_relations_only",
+      "payload": {
+        "base": "F20",
+        "mouth": "large"
+      },
+      "quote": "和大口组合需使用通告允许的杆与转接关系",
+      "authority": "engineering"
+    },
+    {
+      "source": "I6",
+      "part": "F19",
+      "kind": "base_only_mouth",
+      "payload": {
+        "base": "F19",
+        "mouth": "small"
+      },
+      "quote": "仅供原批小口",
+      "authority": "engineering"
+    },
+    {
+      "source": "I6",
+      "part": "F19",
+      "kind": "base_no_adapter",
+      "payload": {
+        "base": "F19"
+      },
+      "quote": "无转接座版本",
+      "authority": "engineering"
+    }
+  ],
+  "marketing_claims_overridden": [
+    {
+      "source": "I5",
+      "part": "J03",
+      "claim": "银弧座适配轻帆二代，旧椅也即插即用。",
+      "authority": "advertising"
+    }
+  ],
+  "dimensions": {
+    "R48": [
+      {
+        "raw": "四十八毫米",
+        "number": 48.0,
+        "unit": "毫米",
+        "value_mm": 48.0,
+        "unit_missing": false
+      }
+    ],
+    "R52": [
+      {
+        "raw": "五点二厘米",
+        "number": 5.2,
+        "unit": "厘米",
+        "value_mm": 52.0,
+        "unit_missing": false
+      }
+    ]
+  },
+  "orders": {
+    "OX1": {
+      "order": "OX1",
+      "status": "promised_suspended_review",
+      "status_zh": "已承诺未寄出：挂起待工程复核，不得按原承诺发出",
+      "can_deliver": false,
+      "part_can_prepare": false,
+      "customer_self_fit_cleared": false,
+      "hold": true,
+      "liaison_escalation": false,
+      "independent_proceed": false,
+      "actions": [
+        "冻结该承诺组合的拣货/寄发",
+        "以工程复测和 C4 现场终核为准重新出决定；复核通过前不向客户确认发货"
+      ],
+      "independent_checks": [],
+      "parts_in_use": {
+        "base": "F20",
+        "base_source": "S7",
+        "adapter_J03_present": null,
+        "rod_spec_part": null,
+        "mentioned_parts": [
+          "F19",
+          "F20"
+        ]
+      },
+      "certain_now": [
+        "当前最高优先级铭牌证据为 CY-D18（大口底盘，S7/工程复测（最高优先级））",
+        "在用脚架按当前证据为 F20（S7）"
+      ],
+      "recommended_kit": null,
+      "recommend_basis": null,
+      "recommended_kit_verdict": null,
+      "symptom_hypotheses": [],
+      "models": [
+        {
+          "id": "M3",
+          "plate": "CY-D18",
+          "aliases": [
+            "轻帆城店款"
+          ],
+          "note": "底盘大口，门店供样专批。"
+        }
+      ],
+      "worlds": [
+        {
+          "model_id": "M3",
+          "plate": "CY-D18",
+          "mouth": "large",
+          "base": "F20",
+          "adapter": true,
+          "rod": null
+        },
+        {
+          "model_id": "M3",
+          "plate": "CY-D18",
+          "mouth": "large",
+          "base": "F20",
+          "adapter": false,
+          "rod": null
+        }
+      ],
+      "facts": [
+        {
+          "variable": "plate",
+          "value": "CY-C17",
+          "source": "S2",
+          "provenance": "engineer_record",
+          "detail": "师傅维修回单记得已拆下 F19，装的是 F20，初检抄牌 CY-C17。",
+          "rank": 3,
+          "provenance_zh": "工程师维修记录"
+        },
+        {
+          "variable": "base",
+          "value": "F20",
+          "source": "S2",
+          "provenance": "engineer_record",
+          "detail": "师傅维修回单记得已拆下 F19，装的是 F20，初检抄牌 CY-C17。",
+          "rank": 3,
+          "provenance_zh": "工程师维修记录"
+        },
+        {
+          "variable": "plate",
+          "value": "CY-D18",
+          "source": "S7",
+          "provenance": "engineer_retest",
+          "detail": "读到同批椅铭牌其实是 CY-D18，架仍为 F20。",
+          "rank": 4,
+          "provenance_zh": "工程复测（最高优先级）"
+        },
+        {
+          "variable": "base",
+          "value": "F20",
+          "source": "S7",
+          "provenance": "engineer_retest",
+          "detail": "读到同批椅铭牌其实是 CY-D18，架仍为 F20。",
+          "rank": 4,
+          "provenance_zh": "工程复测（最高优先级）"
+        },
+        {
+          "variable": "plate",
+          "value": "CY-C17",
+          "source": "A2",
+          "provenance": "customer_reply",
+          "detail": "刚才对着灰牌读的是 C17，底盘没有挪过。",
+          "rank": 1,
+          "provenance_zh": "客户远程答复"
+        },
+        {
+          "variable": "chassis_moved",
+          "value": false,
+          "source": "A2",
+          "provenance": "customer_reply",
+          "detail": "刚才对着灰牌读的是 C17，底盘没有挪过。",
+          "rank": 1,
+          "provenance_zh": "客户远程答复"
+        },
+        {
+          "variable": "base_trial_removed",
+          "value": "F19",
+          "source": "A3",
+          "provenance": "customer_reply",
+          "detail": "我说上次换过旧架，是师傅让我试着换上旧架，后来拆下。",
+          "rank": 1,
+          "provenance_zh": "客户远程答复"
+        }
+      ],
+      "statements": [
+        {
+          "source": "S1",
+          "text": "灰牌磨没了，我猜和办公室的轻帆二代一样，之前大概没换过架。",
+          "provenance": "customer_guess",
+          "provenance_zh": "客户猜测",
+          "kind": "service",
+          "interpretation": "灰牌磨没了，我猜和办公室的轻帆二代一样，之前大概没换过架。"
+        },
+        {
+          "source": "S2",
+          "text": "师傅维修回单记得已拆下 F19，装的是 F20，初检抄牌 CY-C17。",
+          "provenance": "engineer_record",
+          "provenance_zh": "工程师维修记录",
+          "kind": "service",
+          "interpretation": "师傅维修回单记得已拆下 F19，装的是 F20，初检抄牌 CY-C17。"
+        },
+        {
+          "source": "S7",
+          "text": "读到同批椅铭牌其实是 CY-D18，架仍为 F20。",
+          "provenance": "engineer_retest",
+          "provenance_zh": "工程复测（最高优先级）",
+          "kind": "service",
+          "interpretation": "读到同批椅铭牌其实是 CY-D18，架仍为 F20。"
+        },
+        {
+          "source": "A2",
+          "text": "刚才对着灰牌读的是 C17，底盘没有挪过。",
+          "provenance": "customer_reply",
+          "provenance_zh": "客户远程答复",
+          "kind": "reply:C1",
+          "interpretation": "刚才对着灰牌读的是 C17，底盘没有挪过。"
+        },
+        {
+          "source": "A3",
+          "text": "我说上次换过旧架，是师傅让我试着换上旧架，后来拆下。",
+          "provenance": "customer_reply",
+          "provenance_zh": "客户远程答复",
+          "kind": "reply:C2",
+          "interpretation": "我说上次换过旧架，是师傅让我试着换上旧架，后来拆下。"
+        }
+      ],
+      "alias_mentions": [
+        {
+          "alias": "轻帆",
+          "resolves_to": [
+            "M1",
+            "M2"
+          ],
+          "source": "S1",
+          "provenance": "customer_guess",
+          "provenance_zh": "客户猜测",
+          "note": "同一系列名可对应不同接口；客户猜测不用来排除其他可能，铭牌证据优先"
+        },
+        {
+          "alias": "轻帆二代",
+          "resolves_to": [
+            "M1",
+            "M2"
+          ],
+          "source": "S1",
+          "provenance": "customer_guess",
+          "provenance_zh": "客户猜测",
+          "note": "同一系列名可对应不同接口；客户猜测不用来排除其他可能，铭牌证据优先"
+        }
+      ],
+      "symptoms": [],
+      "looseness_excluded": false,
+      "measurements": [],
+      "ambiguous_history": [
+        {
+          "source": "S2",
+          "reading": "F19 已拆下，最终安装 F20",
+          "temporary": false
+        },
+        {
+          "source": "A3",
+          "reading": "“换过旧架”= 临时试装 F19，已拆下；不能当成当前装 F19",
+          "temporary": true
+        }
+      ],
+      "secondary_issues": [],
+      "committed_kit": [
+        "R48",
+        "J03"
+      ],
+      "committed_kit_verdict": {
+        "kit": [
+          "R48",
+          "J03"
+        ],
+        "overall": "blocked_unsafe",
+        "world_verdicts": [
+          {
+            "world": {
+              "model_id": "M3",
+              "plate": "CY-D18",
+              "mouth": "large",
+              "base": "F20",
+              "adapter": true,
+              "rod": null
+            },
+            "verdict": {
+              "status": "unsafe",
+              "reasons": [
+                {
+                  "code": "J03_D18_FORBIDDEN",
+                  "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                  "sources": [
+                    "I2"
+                  ]
+                },
+                {
+                  "code": "R48_D18_NO_LEGAL_ROUTE",
+                  "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                  "sources": [
+                    "I1",
+                    "I2"
+                  ]
+                }
+              ]
+            },
+            "sources": [
+              "I1",
+              "I2"
+            ]
+          },
+          {
+            "world": {
+              "model_id": "M3",
+              "plate": "CY-D18",
+              "mouth": "large",
+              "base": "F20",
+              "adapter": false,
+              "rod": null
+            },
+            "verdict": {
+              "status": "unsafe",
+              "reasons": [
+                {
+                  "code": "J03_D18_FORBIDDEN",
+                  "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                  "sources": [
+                    "I2"
+                  ]
+                },
+                {
+                  "code": "R48_D18_NO_LEGAL_ROUTE",
+                  "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                  "sources": [
+                    "I1",
+                    "I2"
+                  ]
+                }
+              ]
+            },
+            "sources": [
+              "I1",
+              "I2"
+            ]
+          }
+        ],
+        "blocking_reasons": [
+          {
+            "code": "J03_D18_FORBIDDEN",
+            "message": "标牌为 CY-D18 时 J03 也不得使用。",
+            "sources": [
+              "I2"
+            ]
+          },
+          {
+            "code": "R48_D18_NO_LEGAL_ROUTE",
+            "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+            "sources": [
+              "I1",
+              "I2"
+            ]
+          }
+        ]
+      },
+      "candidate_kit_verdicts": {
+        "R48 单杆": {
+          "kit": [
+            "R48"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_D18_FORBIDDEN",
+                    "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                    "sources": [
+                      "I2"
+                    ]
+                  },
+                  {
+                    "code": "R48_D18_NO_LEGAL_ROUTE",
+                    "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                    "sources": [
+                      "I1",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "R48_D18_NO_LEGAL_ROUTE",
+                    "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                    "sources": [
+                      "I1",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "J03_D18_FORBIDDEN",
+              "message": "标牌为 CY-D18 时 J03 也不得使用。",
+              "sources": [
+                "I2"
+              ]
+            },
+            {
+              "code": "R48_D18_NO_LEGAL_ROUTE",
+              "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            }
+          ]
+        },
+        "R48+J03": {
+          "kit": [
+            "R48",
+            "J03"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_D18_FORBIDDEN",
+                    "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                    "sources": [
+                      "I2"
+                    ]
+                  },
+                  {
+                    "code": "R48_D18_NO_LEGAL_ROUTE",
+                    "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                    "sources": [
+                      "I1",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_D18_FORBIDDEN",
+                    "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                    "sources": [
+                      "I2"
+                    ]
+                  },
+                  {
+                    "code": "R48_D18_NO_LEGAL_ROUTE",
+                    "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                    "sources": [
+                      "I1",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "J03_D18_FORBIDDEN",
+              "message": "标牌为 CY-D18 时 J03 也不得使用。",
+              "sources": [
+                "I2"
+              ]
+            },
+            {
+              "code": "R48_D18_NO_LEGAL_ROUTE",
+              "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            }
+          ]
+        },
+        "R52 单杆": {
+          "kit": [
+            "R52"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_D18_FORBIDDEN",
+                    "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                    "sources": [
+                      "I2"
+                    ]
+                  },
+                  {
+                    "code": "R52_WITH_EXISTING_J03",
+                    "message": "R52 的工程关系是大口直接配 F20；若车上已有 J03，需维修员确认/拆除转接座后安装，不能按客户自助直装放行。",
+                    "sources": [
+                      "I3",
+                      "I2",
+                      "C4"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I2",
+                "I3"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "safe",
+                "reasons": [
+                  {
+                    "code": "R52_LARGE_F20_OK",
+                    "message": "R52 五点二厘米（52mm）杆配大口底盘，可直接配 F20。",
+                    "sources": [
+                      "I3"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I3"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "J03_D18_FORBIDDEN",
+              "message": "标牌为 CY-D18 时 J03 也不得使用。",
+              "sources": [
+                "I2"
+              ]
+            },
+            {
+              "code": "R52_WITH_EXISTING_J03",
+              "message": "R52 的工程关系是大口直接配 F20；若车上已有 J03，需维修员确认/拆除转接座后安装，不能按客户自助直装放行。",
+              "sources": [
+                "I3",
+                "I2",
+                "C4"
+              ]
+            }
+          ]
+        }
+      },
+      "deliverable_kits": [],
+      "onsite_kits": [],
+      "questions": {
+        "cards": [
+          {
+            "id": "C1",
+            "channel": "远程",
+            "effort": 1,
+            "instruction": "站立查看靠背外露标签，抄完整铭牌，不推动座椅。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": false,
+            "already_reply": "A2",
+            "recommendation": "优先：站立查看并抄完整外露铭牌，不推椅。当前铭牌证据已收窄型号，此卡主要是留证复核。"
+          },
+          {
+            "id": "C2",
+            "channel": "远程",
+            "effort": 2,
+            "instruction": "不挪椅，用手机照外侧即可看脚架银环；若外侧被遮住，记无法辨认。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": true,
+            "already_reply": "A3",
+            "blocked_observation": false,
+            "recommendation": "不挪椅拍摄外侧银环，用于确认 J03 是否在场。"
+          },
+          {
+            "id": "C3",
+            "channel": "远程",
+            "effort": 1,
+            "instruction": "仅在已经排除底盘与脚架松脱并确认直立时，空椅转动靠背核对哪一处晃动。",
+            "safe_for_all": false,
+            "applicable_now": true,
+            "discriminating_now": false,
+            "already_reply": null,
+            "precondition": "已经排除底盘与脚架松脱并确认直立",
+            "precondition_met": true,
+            "recommendation": "本单没有摇晃症状，C3 不能区分当前的换件决定，无需安排。"
+          },
+          {
+            "id": "C4",
+            "channel": "到店",
+            "effort": 8,
+            "instruction": "由维修员固定椅身后用批次卡对照底盘开口，必要时读取转接座刻印。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": true,
+            "already_reply": null,
+            "recommendation": "到店/上门由维修员固定椅身后终核：批次卡对底盘开口、J03 刻印、底盘与脚架紧固/松脱。"
+          }
+        ],
+        "next_remote_questions": [],
+        "optional_safe_checks": [],
+        "blocked_question_ids": [],
+        "has_decision_ambiguity": true,
+        "onsite_required_for_discrimination": true,
+        "onsite_confirmations": [
+          "用批次卡对照底盘开口，终核 CY-B17/C17/D18 与小口/大口（C4）",
+          "读取转接座刻印，确认 J03 到底在不在场（C4）"
+        ],
+        "current_safe_kit_names": []
+      },
+      "retests": [
+        {
+          "id": "S7",
+          "order": "OX1",
+          "phase": "复测",
+          "associated": "S2",
+          "text": "读到同批椅铭牌其实是 CY-D18，架仍为 F20。"
+        }
+      ],
+      "commitments": [
+        {
+          "id": "S5",
+          "order": "OX1",
+          "phase": "承诺",
+          "associated": "S2",
+          "parts": [
+            "R48",
+            "J03"
+          ],
+          "branch": "浅湾",
+          "verified": [
+            "A2"
+          ]
+        }
+      ],
+      "outbound": [],
+      "shipments": []
+    },
+    "OX2": {
+      "order": "OX2",
+      "status": "ready_to_deliver",
+      "status_zh": "候选已收敛：规格锚定组合对所有剩余解释都安全，可交付",
+      "can_deliver": true,
+      "part_can_prepare": true,
+      "customer_self_fit_cleared": true,
+      "hold": false,
+      "liaison_escalation": false,
+      "independent_proceed": false,
+      "actions": [
+        "按推荐组合拣发，不带入未被依据支持的转接件"
+      ],
+      "independent_checks": [],
+      "parts_in_use": {
+        "base": "F19",
+        "base_source": "S3",
+        "adapter_J03_present": false,
+        "rod_spec_part": null,
+        "mentioned_parts": []
+      },
+      "certain_now": [
+        "当前最高优先级铭牌证据为 CY-B17（小口底盘，S3/来件留言/抄录）",
+        "在用脚架按当前证据为 F19（S3）"
+      ],
+      "recommended_kit": [
+        "R48"
+      ],
+      "recommend_basis": "short_request_plus_small_mouth",
+      "recommended_kit_verdict": {
+        "kit": [
+          "R48"
+        ],
+        "overall": "safe_to_deliver",
+        "world_verdicts": [
+          {
+            "world": {
+              "model_id": "M1",
+              "plate": "CY-B17",
+              "mouth": "small",
+              "base": "F19",
+              "adapter": false,
+              "rod": null
+            },
+            "verdict": {
+              "status": "safe",
+              "reasons": [
+                {
+                  "code": "R48_SMALL_OK",
+                  "message": "R48 四十八毫米短杆仅用于小口底盘，可直接装原小口组合。",
+                  "sources": [
+                    "I1",
+                    "I6"
+                  ]
+                }
+              ]
+            },
+            "sources": [
+              "I1",
+              "I6"
+            ]
+          }
+        ],
+        "blocking_reasons": []
+      },
+      "symptom_hypotheses": [],
+      "models": [
+        {
+          "id": "M1",
+          "plate": "CY-B17",
+          "aliases": [
+            "轻帆",
+            "轻帆二代"
+          ],
+          "note": "浅湾门店首批。底盘小口，未更换时原脚架为短口。"
+        }
+      ],
+      "worlds": [
+        {
+          "model_id": "M1",
+          "plate": "CY-B17",
+          "mouth": "small",
+          "base": "F19",
+          "adapter": false,
+          "rod": null
+        }
+      ],
+      "facts": [
+        {
+          "variable": "plate",
+          "value": "CY-B17",
+          "source": "S3",
+          "provenance": "customer_intake",
+          "detail": "铭牌 CY-B17，要短杆，原脚还在，没有动过。",
+          "rank": 2,
+          "provenance_zh": "来件留言/抄录"
+        },
+        {
+          "variable": "base",
+          "value": "F19",
+          "source": "S3",
+          "provenance": "customer_intake",
+          "detail": "原脚未动；I6: F19 为原批小口脚架",
+          "rank": 2,
+          "provenance_zh": "来件留言/抄录"
+        },
+        {
+          "variable": "adapter",
+          "value": false,
+          "source": "S3",
+          "provenance": "customer_intake",
+          "detail": "原脚未动且 F19 为无转接座版本(I6)",
+          "rank": 2,
+          "provenance_zh": "来件留言/抄录"
+        }
+      ],
+      "statements": [
+        {
+          "source": "S3",
+          "text": "铭牌 CY-B17，要短杆，原脚还在，没有动过。",
+          "provenance": "customer_intake",
+          "provenance_zh": "来件留言/抄录",
+          "kind": "service",
+          "interpretation": "铭牌 CY-B17，要短杆，原脚还在，没有动过。"
+        }
+      ],
+      "alias_mentions": [],
+      "symptoms": [],
+      "looseness_excluded": false,
+      "measurements": [
+        {
+          "source": "S3",
+          "customer_request": "更短的杆",
+          "candidate_part": "R48",
+          "note": "客户诉求/猜测，不能压过测量与工程规格"
+        }
+      ],
+      "ambiguous_history": [],
+      "secondary_issues": [],
+      "committed_kit": null,
+      "committed_kit_verdict": null,
+      "candidate_kit_verdicts": {
+        "R48 单杆": {
+          "kit": [
+            "R48"
+          ],
+          "overall": "safe_to_deliver",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F19",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "safe",
+                "reasons": [
+                  {
+                    "code": "R48_SMALL_OK",
+                    "message": "R48 四十八毫米短杆仅用于小口底盘，可直接装原小口组合。",
+                    "sources": [
+                      "I1",
+                      "I6"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I6"
+              ]
+            }
+          ],
+          "blocking_reasons": []
+        },
+        "R48+J03": {
+          "kit": [
+            "R48",
+            "J03"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F19",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_F19_FORBIDDEN",
+                    "message": "J03 转接座禁止与 F19 旧脚架同装（工程禁令，营销页“即插即用”不能覆盖）。",
+                    "sources": [
+                      "I2",
+                      "I5"
+                    ]
+                  },
+                  {
+                    "code": "R48_SMALL_WITH_ADAPTER",
+                    "message": "小口底盘的 F19 原批组合是无转接座版本，加装 J03 会落入 J03×F19 禁令。",
+                    "sources": [
+                      "I6",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I2",
+                "I5",
+                "I6"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "J03_F19_FORBIDDEN",
+              "message": "J03 转接座禁止与 F19 旧脚架同装（工程禁令，营销页“即插即用”不能覆盖）。",
+              "sources": [
+                "I2",
+                "I5"
+              ]
+            },
+            {
+              "code": "R48_SMALL_WITH_ADAPTER",
+              "message": "小口底盘的 F19 原批组合是无转接座版本，加装 J03 会落入 J03×F19 禁令。",
+              "sources": [
+                "I6",
+                "I2"
+              ]
+            }
+          ]
+        },
+        "R52 单杆": {
+          "kit": [
+            "R52"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F19",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "R52_SMALL_FIT",
+                    "message": "R52（52mm）工程说明只配大口底盘；小口（48mm 接口）不能使用。",
+                    "sources": [
+                      "I3",
+                      "I1"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I3"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "R52_SMALL_FIT",
+              "message": "R52（52mm）工程说明只配大口底盘；小口（48mm 接口）不能使用。",
+              "sources": [
+                "I3",
+                "I1"
+              ]
+            }
+          ]
+        }
+      },
+      "deliverable_kits": [
+        "R48 单杆"
+      ],
+      "onsite_kits": [],
+      "questions": {
+        "cards": [
+          {
+            "id": "C1",
+            "channel": "远程",
+            "effort": 1,
+            "instruction": "站立查看靠背外露标签，抄完整铭牌，不推动座椅。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": false,
+            "already_reply": null,
+            "recommendation": "优先：站立查看并抄完整外露铭牌，不推椅。当前铭牌证据已收窄型号，此卡主要是留证复核。"
+          },
+          {
+            "id": "C2",
+            "channel": "远程",
+            "effort": 2,
+            "instruction": "不挪椅，用手机照外侧即可看脚架银环；若外侧被遮住，记无法辨认。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": false,
+            "already_reply": null,
+            "blocked_observation": false,
+            "recommendation": "不挪椅拍摄外侧银环，用于确认 J03 是否在场。"
+          },
+          {
+            "id": "C3",
+            "channel": "远程",
+            "effort": 1,
+            "instruction": "仅在已经排除底盘与脚架松脱并确认直立时，空椅转动靠背核对哪一处晃动。",
+            "safe_for_all": false,
+            "applicable_now": true,
+            "discriminating_now": false,
+            "already_reply": null,
+            "precondition": "已经排除底盘与脚架松脱并确认直立",
+            "precondition_met": true,
+            "recommendation": "本单没有摇晃症状，C3 不能区分当前的换件决定，无需安排。"
+          },
+          {
+            "id": "C4",
+            "channel": "到店",
+            "effort": 8,
+            "instruction": "由维修员固定椅身后用批次卡对照底盘开口，必要时读取转接座刻印。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": true,
+            "already_reply": null,
+            "recommendation": "到店/上门由维修员固定椅身后终核：批次卡对底盘开口、J03 刻印、底盘与脚架紧固/松脱。"
+          }
+        ],
+        "next_remote_questions": [],
+        "optional_safe_checks": [
+          "C1",
+          "C2"
+        ],
+        "blocked_question_ids": [],
+        "has_decision_ambiguity": false,
+        "onsite_required_for_discrimination": false,
+        "onsite_confirmations": [
+          "用批次卡对照底盘开口，终核 CY-B17/C17/D18 与小口/大口（C4）",
+          "读取转接座刻印，确认 J03 到底在不在场（C4）"
+        ],
+        "current_safe_kit_names": [
+          "R48 单杆"
+        ]
+      },
+      "retests": [],
+      "commitments": [],
+      "outbound": [],
+      "shipments": []
+    },
+    "OX3": {
+      "order": "OX3",
+      "status": "part_determined_conditions_apply",
+      "status_zh": "规格已确定，但仍有适用条件/未排除解释，不能按客户自助无条件交付",
+      "can_deliver": false,
+      "part_can_prepare": true,
+      "customer_self_fit_cleared": false,
+      "hold": false,
+      "liaison_escalation": false,
+      "independent_proceed": false,
+      "actions": [
+        "R52 规格件可先备货；但在转接件是否在场、底盘紧固明确前，不向客户承诺单一组合或自助安装，装配/终核走网点或上门",
+        "远程可区分手段已用尽或不安全：安排 C4 到店/上门终核"
+      ],
+      "independent_checks": [],
+      "parts_in_use": {
+        "base": "F20",
+        "base_source": "S4",
+        "adapter_J03_present": null,
+        "rod_spec_part": "R52",
+        "mentioned_parts": [
+          "F20"
+        ]
+      },
+      "certain_now": [
+        "当前最高优先级铭牌证据为 CY-C17（大口底盘，S4/来件留言/抄录）",
+        "在用脚架按当前证据为 F20（S4）",
+        "“52”对应 R52：工程说明为五点二厘米=52 mm，大口可直接配 F20（I3），不应按客户“短一点”的说法改发 R48+J03",
+        "C2 的“挡住/没看出来”是无法辨认，不是“没有银环/J03”的否定证据",
+        "底盘/脚架松脱尚未排除：C3、坐试、翻动座椅现在都不安全"
+      ],
+      "recommended_kit": [
+        "R52"
+      ],
+      "recommend_basis": "measurement",
+      "recommended_kit_verdict": {
+        "kit": [
+          "R52"
+        ],
+        "overall": "needs_onsite_fit",
+        "world_verdicts": [
+          {
+            "world": {
+              "model_id": "M2",
+              "plate": "CY-C17",
+              "mouth": "large",
+              "base": "F20",
+              "adapter": true,
+              "rod": null
+            },
+            "verdict": {
+              "status": "needs_onsite",
+              "reasons": [
+                {
+                  "code": "R52_WITH_EXISTING_J03",
+                  "message": "R52 的工程关系是大口直接配 F20；若车上已有 J03，需维修员确认/拆除转接座后安装，不能按客户自助直装放行。",
+                  "sources": [
+                    "I3",
+                    "I2",
+                    "C4"
+                  ]
+                }
+              ]
+            },
+            "sources": [
+              "I2",
+              "I3"
+            ]
+          },
+          {
+            "world": {
+              "model_id": "M2",
+              "plate": "CY-C17",
+              "mouth": "large",
+              "base": "F20",
+              "adapter": false,
+              "rod": null
+            },
+            "verdict": {
+              "status": "safe",
+              "reasons": [
+                {
+                  "code": "R52_LARGE_F20_OK",
+                  "message": "R52 五点二厘米（52mm）杆配大口底盘，可直接配 F20。",
+                  "sources": [
+                    "I3"
+                  ]
+                }
+              ]
+            },
+            "sources": [
+              "I3"
+            ]
+          }
+        ],
+        "blocking_reasons": []
+      },
+      "symptom_hypotheses": [
+        {
+          "id": "H_rod",
+          "explanation": "杆肩规格不匹配或杆-底盘接口旷量，即客户“换短一点的杆就行”的猜测",
+          "status": "spec_points_R52"
+        },
+        {
+          "id": "H_adapter",
+          "explanation": "后来加装的 J03 银弧转接件旷动，视频里可能分不清摇的是脚架还是转接件",
+          "status": "unexcluded_C2_blocked_or_unasked"
+        },
+        {
+          "id": "H_chassis_loose",
+          "explanation": "底盘或脚架连接松脱；A1 报告“底盘还是会晃”，该解释尚未排除",
+          "status": "live_and_blocks_C3_sit_flip"
+        }
+      ],
+      "models": [
+        {
+          "id": "M2",
+          "plate": "CY-C17",
+          "aliases": [
+            "轻帆",
+            "轻帆二代"
+          ],
+          "note": "同一销售名，底盘大口。灰标为本批，坐垫标签沿用上批。"
+        }
+      ],
+      "worlds": [
+        {
+          "model_id": "M2",
+          "plate": "CY-C17",
+          "mouth": "large",
+          "base": "F20",
+          "adapter": true,
+          "rod": null
+        },
+        {
+          "model_id": "M2",
+          "plate": "CY-C17",
+          "mouth": "large",
+          "base": "F20",
+          "adapter": false,
+          "rod": null
+        }
+      ],
+      "facts": [
+        {
+          "variable": "plate",
+          "value": "CY-C17",
+          "source": "S4",
+          "provenance": "customer_intake",
+          "detail": "铭牌 CY-C17，现装 F20，杆的肩部要 52，单位没记。",
+          "rank": 2,
+          "provenance_zh": "来件留言/抄录"
+        },
+        {
+          "variable": "base",
+          "value": "F20",
+          "source": "S4",
+          "provenance": "customer_intake",
+          "detail": "铭牌 CY-C17，现装 F20，杆的肩部要 52，单位没记。",
+          "rank": 2,
+          "provenance_zh": "来件留言/抄录"
+        },
+        {
+          "variable": "c2_observation",
+          "value": "blocked",
+          "source": "A1",
+          "provenance": "customer_reply",
+          "detail": "外面被桌子挡住，没看出来，底盘还是会晃。",
+          "rank": 1,
+          "provenance_zh": "客户远程答复"
+        }
+      ],
+      "statements": [
+        {
+          "source": "S4",
+          "text": "铭牌 CY-C17，现装 F20，杆的肩部要 52，单位没记。",
+          "provenance": "customer_intake",
+          "provenance_zh": "来件留言/抄录",
+          "kind": "service",
+          "interpretation": "铭牌 CY-C17，现装 F20，杆的肩部要 52，单位没记。"
+        },
+        {
+          "source": "A1",
+          "text": "外面被桌子挡住，没看出来，底盘还是会晃。",
+          "provenance": "customer_reply",
+          "provenance_zh": "客户远程答复",
+          "kind": "reply:C2",
+          "interpretation": "外面被桌子挡住，没看出来，底盘还是会晃。"
+        }
+      ],
+      "alias_mentions": [],
+      "symptoms": [
+        {
+          "type": "c2_unobservable",
+          "source": "A1",
+          "text": "外面被桌子挡住，没看出来，底盘还是会晃。"
+        },
+        {
+          "type": "wobble",
+          "location": "chassis",
+          "source": "A1",
+          "text": "底盘还是会晃"
+        }
+      ],
+      "looseness_excluded": false,
+      "measurements": [
+        {
+          "raw": "杆的肩部要 52",
+          "number": 52.0,
+          "unit": null,
+          "value_mm": null,
+          "unit_missing": true,
+          "spec_match_part": "R52",
+          "normalized_value_mm": 52.0,
+          "normalization_basis": "I3: 五点二厘米 = 52 mm，且物料号 R52 对应",
+          "source": "S4"
+        }
+      ],
+      "ambiguous_history": [],
+      "secondary_issues": [],
+      "committed_kit": null,
+      "committed_kit_verdict": null,
+      "candidate_kit_verdicts": {
+        "R48 单杆": {
+          "kit": [
+            "R48"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M2",
+                "plate": "CY-C17",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "safe",
+                "reasons": [
+                  {
+                    "code": "R48_LARGE_J03_F20_OK",
+                    "message": "R48 + J03 + F20 是 C17 大口底盘允许的转接组合。",
+                    "sources": [
+                      "I1",
+                      "I2",
+                      "I4"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2",
+                "I4"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M2",
+                "plate": "CY-C17",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "R48_LARGE_NEEDS_J03",
+                    "message": "大口底盘如装 R48，必须配 J03 且脚架必须为 F20；当前组合缺少 J03。",
+                    "sources": [
+                      "I1"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "R48_LARGE_NEEDS_J03",
+              "message": "大口底盘如装 R48，必须配 J03 且脚架必须为 F20；当前组合缺少 J03。",
+              "sources": [
+                "I1"
+              ]
+            }
+          ]
+        },
+        "R48+J03": {
+          "kit": [
+            "R48",
+            "J03"
+          ],
+          "overall": "safe_to_deliver",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M2",
+                "plate": "CY-C17",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "safe",
+                "reasons": [
+                  {
+                    "code": "R48_LARGE_J03_F20_OK",
+                    "message": "R48 + J03 + F20 是 C17 大口底盘允许的转接组合。",
+                    "sources": [
+                      "I1",
+                      "I2",
+                      "I4"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2",
+                "I4"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M2",
+                "plate": "CY-C17",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "safe",
+                "reasons": [
+                  {
+                    "code": "R48_LARGE_J03_F20_OK",
+                    "message": "R48 + J03 + F20 是 C17 大口底盘允许的转接组合。",
+                    "sources": [
+                      "I1",
+                      "I2",
+                      "I4"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2",
+                "I4"
+              ]
+            }
+          ],
+          "blocking_reasons": []
+        },
+        "R52 单杆": {
+          "kit": [
+            "R52"
+          ],
+          "overall": "needs_onsite_fit",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M2",
+                "plate": "CY-C17",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "needs_onsite",
+                "reasons": [
+                  {
+                    "code": "R52_WITH_EXISTING_J03",
+                    "message": "R52 的工程关系是大口直接配 F20；若车上已有 J03，需维修员确认/拆除转接座后安装，不能按客户自助直装放行。",
+                    "sources": [
+                      "I3",
+                      "I2",
+                      "C4"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I2",
+                "I3"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M2",
+                "plate": "CY-C17",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "safe",
+                "reasons": [
+                  {
+                    "code": "R52_LARGE_F20_OK",
+                    "message": "R52 五点二厘米（52mm）杆配大口底盘，可直接配 F20。",
+                    "sources": [
+                      "I3"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I3"
+              ]
+            }
+          ],
+          "blocking_reasons": []
+        }
+      },
+      "deliverable_kits": [
+        "R48+J03"
+      ],
+      "onsite_kits": [
+        "R52 单杆"
+      ],
+      "questions": {
+        "cards": [
+          {
+            "id": "C1",
+            "channel": "远程",
+            "effort": 1,
+            "instruction": "站立查看靠背外露标签，抄完整铭牌，不推动座椅。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": false,
+            "already_reply": null,
+            "recommendation": "优先：站立查看并抄完整外露铭牌，不推椅。当前铭牌证据已收窄型号，此卡主要是留证复核。"
+          },
+          {
+            "id": "C2",
+            "channel": "远程",
+            "effort": 2,
+            "instruction": "不挪椅，用手机照外侧即可看脚架银环；若外侧被遮住，记无法辨认。",
+            "safe_for_all": true,
+            "applicable_now": false,
+            "discriminating_now": true,
+            "already_reply": "A1",
+            "blocked_observation": true,
+            "recommendation": "C2 已尝试但视线被挡，答复按“无法辨认”处理，不能当成没有银环/J03。可请顾客从不被遮挡的另一侧伸手机再拍一次（仍不挪椅、一次回复）；若整圈都被遮住，远程无法收窄，转 C4。"
+          },
+          {
+            "id": "C3",
+            "channel": "远程",
+            "effort": 1,
+            "instruction": "仅在已经排除底盘与脚架松脱并确认直立时，空椅转动靠背核对哪一处晃动。",
+            "safe_for_all": false,
+            "applicable_now": false,
+            "discriminating_now": true,
+            "already_reply": null,
+            "precondition": "已经排除底盘与脚架松脱并确认直立",
+            "precondition_met": false,
+            "recommendation": "现在不能让顾客转动靠背、坐上去或翻动座椅：答复仍报告底盘晃，底盘/脚架松脱尚未排除。先做无负载的松脱排查；远程无法明确排除时转 C4。"
+          },
+          {
+            "id": "C4",
+            "channel": "到店",
+            "effort": 8,
+            "instruction": "由维修员固定椅身后用批次卡对照底盘开口，必要时读取转接座刻印。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": true,
+            "already_reply": null,
+            "recommendation": "到店/上门由维修员固定椅身后终核：批次卡对底盘开口、J03 刻印、底盘与脚架紧固/松脱。"
+          }
+        ],
+        "next_remote_questions": [],
+        "optional_safe_checks": [
+          "C1"
+        ],
+        "blocked_question_ids": [
+          "C2",
+          "C3"
+        ],
+        "has_decision_ambiguity": true,
+        "onsite_required_for_discrimination": true,
+        "onsite_confirmations": [
+          "先固定椅身并检查/紧固底盘与 F19/F20 脚架连接，排除松脱后再做晃动来源核对；在此之前不要让顾客坐试或翻椅",
+          "用批次卡对照底盘开口，终核 CY-B17/C17/D18 与小口/大口（C4）",
+          "读取转接座刻印，确认 J03 到底在不在场（C4）"
+        ],
+        "current_safe_kit_names": [
+          "R48+J03"
+        ]
+      },
+      "retests": [],
+      "commitments": [],
+      "outbound": [],
+      "shipments": []
+    },
+    "OX4": {
+      "order": "OX4",
+      "status": "shipped_liaison_review",
+      "status_zh": "已寄出且复测认错批次/组合：交联络员判断暂停使用或安排上门",
+      "can_deliver": false,
+      "part_can_prepare": false,
+      "customer_self_fit_cleared": false,
+      "hold": false,
+      "liaison_escalation": true,
+      "independent_proceed": false,
+      "actions": [
+        "联络员调取档案：当时确认了什么、寄出了什么、现在残留哪种不安全装配可能",
+        "由联络员决定是否请客户暂停使用该组合，并安排上门复核/更换；不远程指导客户自行拆除 J03"
+      ],
+      "independent_checks": [],
+      "parts_in_use": {
+        "base": "F20",
+        "base_source": "S6",
+        "adapter_J03_present": null,
+        "rod_spec_part": null,
+        "mentioned_parts": [
+          "F20"
+        ]
+      },
+      "certain_now": [
+        "当前最高优先级铭牌证据为 CY-D18（大口底盘，S8/工程复测（最高优先级））",
+        "在用脚架按当前证据为 F20（S6）"
+      ],
+      "recommended_kit": null,
+      "recommend_basis": null,
+      "recommended_kit_verdict": null,
+      "symptom_hypotheses": [],
+      "models": [
+        {
+          "id": "M3",
+          "plate": "CY-D18",
+          "aliases": [
+            "轻帆城店款"
+          ],
+          "note": "底盘大口，门店供样专批。"
+        }
+      ],
+      "worlds": [
+        {
+          "model_id": "M3",
+          "plate": "CY-D18",
+          "mouth": "large",
+          "base": "F20",
+          "adapter": true,
+          "rod": null
+        },
+        {
+          "model_id": "M3",
+          "plate": "CY-D18",
+          "mouth": "large",
+          "base": "F20",
+          "adapter": false,
+          "rod": null
+        }
+      ],
+      "facts": [
+        {
+          "variable": "plate",
+          "value": "CY-C17",
+          "source": "S6",
+          "provenance": "engineer_initial",
+          "detail": "初检 CY-C17，F20 脚架。",
+          "rank": 3,
+          "provenance_zh": "出库/初检确认"
+        },
+        {
+          "variable": "base",
+          "value": "F20",
+          "source": "S6",
+          "provenance": "engineer_initial",
+          "detail": "初检 CY-C17，F20 脚架。",
+          "rank": 3,
+          "provenance_zh": "出库/初检确认"
+        },
+        {
+          "variable": "plate",
+          "value": "CY-D18",
+          "source": "S8",
+          "provenance": "engineer_retest",
+          "detail": "确认发给该客户的椅也是 CY-D18。",
+          "rank": 4,
+          "provenance_zh": "工程复测（最高优先级）"
+        }
+      ],
+      "statements": [
+        {
+          "source": "S6",
+          "text": "初检 CY-C17，F20 脚架。",
+          "provenance": "engineer_initial",
+          "provenance_zh": "出库/初检确认",
+          "kind": "service",
+          "interpretation": "初检 CY-C17，F20 脚架。"
+        },
+        {
+          "source": "S8",
+          "text": "确认发给该客户的椅也是 CY-D18。",
+          "provenance": "engineer_retest",
+          "provenance_zh": "工程复测（最高优先级）",
+          "kind": "service",
+          "interpretation": "确认发给该客户的椅也是 CY-D18。"
+        }
+      ],
+      "alias_mentions": [],
+      "symptoms": [],
+      "looseness_excluded": false,
+      "measurements": [],
+      "ambiguous_history": [],
+      "secondary_issues": [],
+      "committed_kit": [
+        "R48",
+        "J03"
+      ],
+      "committed_kit_verdict": {
+        "kit": [
+          "R48",
+          "J03"
+        ],
+        "overall": "blocked_unsafe",
+        "world_verdicts": [
+          {
+            "world": {
+              "model_id": "M3",
+              "plate": "CY-D18",
+              "mouth": "large",
+              "base": "F20",
+              "adapter": true,
+              "rod": null
+            },
+            "verdict": {
+              "status": "unsafe",
+              "reasons": [
+                {
+                  "code": "J03_D18_FORBIDDEN",
+                  "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                  "sources": [
+                    "I2"
+                  ]
+                },
+                {
+                  "code": "R48_D18_NO_LEGAL_ROUTE",
+                  "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                  "sources": [
+                    "I1",
+                    "I2"
+                  ]
+                }
+              ]
+            },
+            "sources": [
+              "I1",
+              "I2"
+            ]
+          },
+          {
+            "world": {
+              "model_id": "M3",
+              "plate": "CY-D18",
+              "mouth": "large",
+              "base": "F20",
+              "adapter": false,
+              "rod": null
+            },
+            "verdict": {
+              "status": "unsafe",
+              "reasons": [
+                {
+                  "code": "J03_D18_FORBIDDEN",
+                  "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                  "sources": [
+                    "I2"
+                  ]
+                },
+                {
+                  "code": "R48_D18_NO_LEGAL_ROUTE",
+                  "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                  "sources": [
+                    "I1",
+                    "I2"
+                  ]
+                }
+              ]
+            },
+            "sources": [
+              "I1",
+              "I2"
+            ]
+          }
+        ],
+        "blocking_reasons": [
+          {
+            "code": "J03_D18_FORBIDDEN",
+            "message": "标牌为 CY-D18 时 J03 也不得使用。",
+            "sources": [
+              "I2"
+            ]
+          },
+          {
+            "code": "R48_D18_NO_LEGAL_ROUTE",
+            "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+            "sources": [
+              "I1",
+              "I2"
+            ]
+          }
+        ]
+      },
+      "candidate_kit_verdicts": {
+        "R48 单杆": {
+          "kit": [
+            "R48"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_D18_FORBIDDEN",
+                    "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                    "sources": [
+                      "I2"
+                    ]
+                  },
+                  {
+                    "code": "R48_D18_NO_LEGAL_ROUTE",
+                    "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                    "sources": [
+                      "I1",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "R48_D18_NO_LEGAL_ROUTE",
+                    "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                    "sources": [
+                      "I1",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "J03_D18_FORBIDDEN",
+              "message": "标牌为 CY-D18 时 J03 也不得使用。",
+              "sources": [
+                "I2"
+              ]
+            },
+            {
+              "code": "R48_D18_NO_LEGAL_ROUTE",
+              "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            }
+          ]
+        },
+        "R48+J03": {
+          "kit": [
+            "R48",
+            "J03"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_D18_FORBIDDEN",
+                    "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                    "sources": [
+                      "I2"
+                    ]
+                  },
+                  {
+                    "code": "R48_D18_NO_LEGAL_ROUTE",
+                    "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                    "sources": [
+                      "I1",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_D18_FORBIDDEN",
+                    "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                    "sources": [
+                      "I2"
+                    ]
+                  },
+                  {
+                    "code": "R48_D18_NO_LEGAL_ROUTE",
+                    "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                    "sources": [
+                      "I1",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "J03_D18_FORBIDDEN",
+              "message": "标牌为 CY-D18 时 J03 也不得使用。",
+              "sources": [
+                "I2"
+              ]
+            },
+            {
+              "code": "R48_D18_NO_LEGAL_ROUTE",
+              "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+              "sources": [
+                "I1",
+                "I2"
+              ]
+            }
+          ]
+        },
+        "R52 单杆": {
+          "kit": [
+            "R52"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_D18_FORBIDDEN",
+                    "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                    "sources": [
+                      "I2"
+                    ]
+                  },
+                  {
+                    "code": "R52_WITH_EXISTING_J03",
+                    "message": "R52 的工程关系是大口直接配 F20；若车上已有 J03，需维修员确认/拆除转接座后安装，不能按客户自助直装放行。",
+                    "sources": [
+                      "I3",
+                      "I2",
+                      "C4"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I2",
+                "I3"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M3",
+                "plate": "CY-D18",
+                "mouth": "large",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "safe",
+                "reasons": [
+                  {
+                    "code": "R52_LARGE_F20_OK",
+                    "message": "R52 五点二厘米（52mm）杆配大口底盘，可直接配 F20。",
+                    "sources": [
+                      "I3"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I3"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "J03_D18_FORBIDDEN",
+              "message": "标牌为 CY-D18 时 J03 也不得使用。",
+              "sources": [
+                "I2"
+              ]
+            },
+            {
+              "code": "R52_WITH_EXISTING_J03",
+              "message": "R52 的工程关系是大口直接配 F20；若车上已有 J03，需维修员确认/拆除转接座后安装，不能按客户自助直装放行。",
+              "sources": [
+                "I3",
+                "I2",
+                "C4"
+              ]
+            }
+          ]
+        }
+      },
+      "deliverable_kits": [],
+      "onsite_kits": [],
+      "questions": {
+        "cards": [
+          {
+            "id": "C1",
+            "channel": "远程",
+            "effort": 1,
+            "instruction": "站立查看靠背外露标签，抄完整铭牌，不推动座椅。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": false,
+            "already_reply": null,
+            "recommendation": "优先：站立查看并抄完整外露铭牌，不推椅。当前铭牌证据已收窄型号，此卡主要是留证复核。"
+          },
+          {
+            "id": "C2",
+            "channel": "远程",
+            "effort": 2,
+            "instruction": "不挪椅，用手机照外侧即可看脚架银环；若外侧被遮住，记无法辨认。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": true,
+            "already_reply": null,
+            "blocked_observation": false,
+            "recommendation": "不挪椅拍摄外侧银环，用于确认 J03 是否在场。"
+          },
+          {
+            "id": "C3",
+            "channel": "远程",
+            "effort": 1,
+            "instruction": "仅在已经排除底盘与脚架松脱并确认直立时，空椅转动靠背核对哪一处晃动。",
+            "safe_for_all": false,
+            "applicable_now": true,
+            "discriminating_now": false,
+            "already_reply": null,
+            "precondition": "已经排除底盘与脚架松脱并确认直立",
+            "precondition_met": true,
+            "recommendation": "本单没有摇晃症状，C3 不能区分当前的换件决定，无需安排。"
+          },
+          {
+            "id": "C4",
+            "channel": "到店",
+            "effort": 8,
+            "instruction": "由维修员固定椅身后用批次卡对照底盘开口，必要时读取转接座刻印。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": true,
+            "already_reply": null,
+            "recommendation": "到店/上门由维修员固定椅身后终核：批次卡对底盘开口、J03 刻印、底盘与脚架紧固/松脱。"
+          }
+        ],
+        "next_remote_questions": [
+          {
+            "id": "C2",
+            "channel": "远程",
+            "effort": 2,
+            "instruction": "不挪椅，用手机照外侧即可看脚架银环；若外侧被遮住，记无法辨认。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": true,
+            "already_reply": null,
+            "blocked_observation": false,
+            "recommendation": "不挪椅拍摄外侧银环，用于确认 J03 是否在场。"
+          }
+        ],
+        "optional_safe_checks": [
+          "C1"
+        ],
+        "blocked_question_ids": [],
+        "has_decision_ambiguity": true,
+        "onsite_required_for_discrimination": false,
+        "onsite_confirmations": [
+          "用批次卡对照底盘开口，终核 CY-B17/C17/D18 与小口/大口（C4）",
+          "读取转接座刻印，确认 J03 到底在不在场（C4）"
+        ],
+        "current_safe_kit_names": []
+      },
+      "retests": [
+        {
+          "id": "S8",
+          "order": "OX4",
+          "phase": "复测",
+          "associated": "S6",
+          "text": "确认发给该客户的椅也是 CY-D18。"
+        }
+      ],
+      "commitments": [],
+      "outbound": [
+        {
+          "id": "S6",
+          "order": "OX4",
+          "phase": "出库",
+          "appointment": "2026-12-01",
+          "text": "初检 CY-C17，F20 脚架。",
+          "parts": [
+            "R48",
+            "J03"
+          ],
+          "branch": "浅湾"
+        }
+      ],
+      "shipments": [
+        {
+          "id": "D1",
+          "order": "OX4",
+          "parts": [
+            "R48",
+            "J03"
+          ],
+          "branch": "浅湾"
+        }
+      ]
+    },
+    "OX5": {
+      "order": "OX5",
+      "status": "independent_proceed",
+      "status_zh": "独立事项：可单独安排（缝线/饰面），不被他单挂起",
+      "can_deliver": false,
+      "part_can_prepare": false,
+      "customer_self_fit_cleared": false,
+      "hold": false,
+      "liaison_escalation": false,
+      "independent_proceed": true,
+      "actions": [
+        "按饰面缝线维修独立核实与报价；底盘兼容/挂起结论不适用于这把椅"
+      ],
+      "independent_checks": [
+        "请客户在不搬椅、不试坐的情况下拍缝线脱开处近照，饰面问题单独流转"
+      ],
+      "parts_in_use": {
+        "base": null,
+        "base_source": null,
+        "adapter_J03_present": null,
+        "rod_spec_part": null,
+        "mentioned_parts": []
+      },
+      "certain_now": [
+        "当前最高优先级铭牌证据为 CY-B17（小口底盘，S9/来件留言/抄录）",
+        "该单只涉及饰面缝线，与摇晃/底盘兼容无关，可独立核实"
+      ],
+      "recommended_kit": null,
+      "recommend_basis": null,
+      "recommended_kit_verdict": null,
+      "symptom_hypotheses": [],
+      "models": [
+        {
+          "id": "M1",
+          "plate": "CY-B17",
+          "aliases": [
+            "轻帆",
+            "轻帆二代"
+          ],
+          "note": "浅湾门店首批。底盘小口，未更换时原脚架为短口。"
+        }
+      ],
+      "worlds": [
+        {
+          "model_id": "M1",
+          "plate": "CY-B17",
+          "mouth": "small",
+          "base": "F19",
+          "adapter": true,
+          "rod": null
+        },
+        {
+          "model_id": "M1",
+          "plate": "CY-B17",
+          "mouth": "small",
+          "base": "F19",
+          "adapter": false,
+          "rod": null
+        },
+        {
+          "model_id": "M1",
+          "plate": "CY-B17",
+          "mouth": "small",
+          "base": "F20",
+          "adapter": true,
+          "rod": null
+        },
+        {
+          "model_id": "M1",
+          "plate": "CY-B17",
+          "mouth": "small",
+          "base": "F20",
+          "adapter": false,
+          "rod": null
+        }
+      ],
+      "facts": [
+        {
+          "variable": "plate",
+          "value": "CY-B17",
+          "source": "S9",
+          "provenance": "customer_intake",
+          "detail": "同一来信另提到工位边的 CY-B17，椅面缝线脱开，与摇晃无关。",
+          "rank": 2,
+          "provenance_zh": "来件留言/抄录"
+        }
+      ],
+      "statements": [
+        {
+          "source": "S1",
+          "text": "灰牌磨没了，我猜和办公室的轻帆二代一样，之前大概没换过架。",
+          "provenance": "customer_guess",
+          "provenance_zh": "客户猜测",
+          "kind": "service",
+          "interpretation": "灰牌磨没了，我猜和办公室的轻帆二代一样，之前大概没换过架。"
+        },
+        {
+          "source": "S9",
+          "text": "同一来信另提到工位边的 CY-B17，椅面缝线脱开，与摇晃无关。",
+          "provenance": "customer_intake",
+          "provenance_zh": "来件留言/抄录",
+          "kind": "service",
+          "interpretation": "同一来信另提到工位边的 CY-B17，椅面缝线脱开，与摇晃无关。"
+        }
+      ],
+      "alias_mentions": [
+        {
+          "alias": "轻帆",
+          "resolves_to": [
+            "M1",
+            "M2"
+          ],
+          "source": "S1",
+          "provenance": "customer_guess",
+          "provenance_zh": "客户猜测",
+          "note": "同一系列名可对应不同接口；客户猜测不用来排除其他可能，铭牌证据优先"
+        },
+        {
+          "alias": "轻帆二代",
+          "resolves_to": [
+            "M1",
+            "M2"
+          ],
+          "source": "S1",
+          "provenance": "customer_guess",
+          "provenance_zh": "客户猜测",
+          "note": "同一系列名可对应不同接口；客户猜测不用来排除其他可能，铭牌证据优先"
+        }
+      ],
+      "symptoms": [
+        {
+          "type": "upholstery_seam",
+          "location": "seat",
+          "source": "S9",
+          "text": "同一来信另提到工位边的 CY-B17，椅面缝线脱开，与摇晃无关。"
+        }
+      ],
+      "looseness_excluded": false,
+      "measurements": [],
+      "ambiguous_history": [],
+      "secondary_issues": [
+        {
+          "source": "S9",
+          "description": "同一来信另提到工位边的 CY-B17，椅面缝线脱开，与摇晃无关。",
+          "separable": true,
+          "reason": "明文说明与摇晃无关/同信另提"
+        }
+      ],
+      "committed_kit": null,
+      "committed_kit_verdict": null,
+      "candidate_kit_verdicts": {
+        "R48 单杆": {
+          "kit": [
+            "R48"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F19",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_F19_FORBIDDEN",
+                    "message": "J03 转接座禁止与 F19 旧脚架同装（工程禁令，营销页“即插即用”不能覆盖）。",
+                    "sources": [
+                      "I2",
+                      "I5"
+                    ]
+                  },
+                  {
+                    "code": "R48_SMALL_WITH_ADAPTER",
+                    "message": "小口底盘的 F19 原批组合是无转接座版本，加装 J03 会落入 J03×F19 禁令。",
+                    "sources": [
+                      "I6",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I2",
+                "I5",
+                "I6"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F19",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "safe",
+                "reasons": [
+                  {
+                    "code": "R48_SMALL_OK",
+                    "message": "R48 四十八毫米短杆仅用于小口底盘，可直接装原小口组合。",
+                    "sources": [
+                      "I1",
+                      "I6"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I6"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "R48_SMALL_WITH_ADAPTER",
+                    "message": "小口底盘的 F19 原批组合是无转接座版本，加装 J03 会落入 J03×F19 禁令。",
+                    "sources": [
+                      "I6",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I2",
+                "I6"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "safe",
+                "reasons": [
+                  {
+                    "code": "R48_SMALL_OK",
+                    "message": "R48 四十八毫米短杆仅用于小口底盘，可直接装原小口组合。",
+                    "sources": [
+                      "I1",
+                      "I6"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I6"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "J03_F19_FORBIDDEN",
+              "message": "J03 转接座禁止与 F19 旧脚架同装（工程禁令，营销页“即插即用”不能覆盖）。",
+              "sources": [
+                "I2",
+                "I5"
+              ]
+            },
+            {
+              "code": "R48_SMALL_WITH_ADAPTER",
+              "message": "小口底盘的 F19 原批组合是无转接座版本，加装 J03 会落入 J03×F19 禁令。",
+              "sources": [
+                "I6",
+                "I2"
+              ]
+            }
+          ]
+        },
+        "R48+J03": {
+          "kit": [
+            "R48",
+            "J03"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F19",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_F19_FORBIDDEN",
+                    "message": "J03 转接座禁止与 F19 旧脚架同装（工程禁令，营销页“即插即用”不能覆盖）。",
+                    "sources": [
+                      "I2",
+                      "I5"
+                    ]
+                  },
+                  {
+                    "code": "R48_SMALL_WITH_ADAPTER",
+                    "message": "小口底盘的 F19 原批组合是无转接座版本，加装 J03 会落入 J03×F19 禁令。",
+                    "sources": [
+                      "I6",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I2",
+                "I5",
+                "I6"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F19",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_F19_FORBIDDEN",
+                    "message": "J03 转接座禁止与 F19 旧脚架同装（工程禁令，营销页“即插即用”不能覆盖）。",
+                    "sources": [
+                      "I2",
+                      "I5"
+                    ]
+                  },
+                  {
+                    "code": "R48_SMALL_WITH_ADAPTER",
+                    "message": "小口底盘的 F19 原批组合是无转接座版本，加装 J03 会落入 J03×F19 禁令。",
+                    "sources": [
+                      "I6",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I2",
+                "I5",
+                "I6"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "R48_SMALL_WITH_ADAPTER",
+                    "message": "小口底盘的 F19 原批组合是无转接座版本，加装 J03 会落入 J03×F19 禁令。",
+                    "sources": [
+                      "I6",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I2",
+                "I6"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "R48_SMALL_WITH_ADAPTER",
+                    "message": "小口底盘的 F19 原批组合是无转接座版本，加装 J03 会落入 J03×F19 禁令。",
+                    "sources": [
+                      "I6",
+                      "I2"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I2",
+                "I6"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "J03_F19_FORBIDDEN",
+              "message": "J03 转接座禁止与 F19 旧脚架同装（工程禁令，营销页“即插即用”不能覆盖）。",
+              "sources": [
+                "I2",
+                "I5"
+              ]
+            },
+            {
+              "code": "R48_SMALL_WITH_ADAPTER",
+              "message": "小口底盘的 F19 原批组合是无转接座版本，加装 J03 会落入 J03×F19 禁令。",
+              "sources": [
+                "I6",
+                "I2"
+              ]
+            }
+          ]
+        },
+        "R52 单杆": {
+          "kit": [
+            "R52"
+          ],
+          "overall": "blocked_unsafe",
+          "world_verdicts": [
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F19",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "J03_F19_FORBIDDEN",
+                    "message": "J03 转接座禁止与 F19 旧脚架同装（工程禁令，营销页“即插即用”不能覆盖）。",
+                    "sources": [
+                      "I2",
+                      "I5"
+                    ]
+                  },
+                  {
+                    "code": "R52_SMALL_FIT",
+                    "message": "R52（52mm）工程说明只配大口底盘；小口（48mm 接口）不能使用。",
+                    "sources": [
+                      "I3",
+                      "I1"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I2",
+                "I3",
+                "I5"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F19",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "R52_SMALL_FIT",
+                    "message": "R52（52mm）工程说明只配大口底盘；小口（48mm 接口）不能使用。",
+                    "sources": [
+                      "I3",
+                      "I1"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I3"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F20",
+                "adapter": true,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "R52_SMALL_FIT",
+                    "message": "R52（52mm）工程说明只配大口底盘；小口（48mm 接口）不能使用。",
+                    "sources": [
+                      "I3",
+                      "I1"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I3"
+              ]
+            },
+            {
+              "world": {
+                "model_id": "M1",
+                "plate": "CY-B17",
+                "mouth": "small",
+                "base": "F20",
+                "adapter": false,
+                "rod": null
+              },
+              "verdict": {
+                "status": "unsafe",
+                "reasons": [
+                  {
+                    "code": "R52_SMALL_FIT",
+                    "message": "R52（52mm）工程说明只配大口底盘；小口（48mm 接口）不能使用。",
+                    "sources": [
+                      "I3",
+                      "I1"
+                    ]
+                  }
+                ]
+              },
+              "sources": [
+                "I1",
+                "I3"
+              ]
+            }
+          ],
+          "blocking_reasons": [
+            {
+              "code": "J03_F19_FORBIDDEN",
+              "message": "J03 转接座禁止与 F19 旧脚架同装（工程禁令，营销页“即插即用”不能覆盖）。",
+              "sources": [
+                "I2",
+                "I5"
+              ]
+            },
+            {
+              "code": "R52_SMALL_FIT",
+              "message": "R52（52mm）工程说明只配大口底盘；小口（48mm 接口）不能使用。",
+              "sources": [
+                "I3",
+                "I1"
+              ]
+            }
+          ]
+        }
+      },
+      "deliverable_kits": [],
+      "onsite_kits": [],
+      "questions": {
+        "cards": [
+          {
+            "id": "C1",
+            "channel": "远程",
+            "effort": 1,
+            "instruction": "站立查看靠背外露标签，抄完整铭牌，不推动座椅。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": false,
+            "already_reply": null,
+            "recommendation": "优先：站立查看并抄完整外露铭牌，不推椅。当前铭牌证据已收窄型号，此卡主要是留证复核。"
+          },
+          {
+            "id": "C2",
+            "channel": "远程",
+            "effort": 2,
+            "instruction": "不挪椅，用手机照外侧即可看脚架银环；若外侧被遮住，记无法辨认。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": true,
+            "already_reply": null,
+            "blocked_observation": false,
+            "recommendation": "不挪椅拍摄外侧银环，用于确认 J03 是否在场。"
+          },
+          {
+            "id": "C3",
+            "channel": "远程",
+            "effort": 1,
+            "instruction": "仅在已经排除底盘与脚架松脱并确认直立时，空椅转动靠背核对哪一处晃动。",
+            "safe_for_all": false,
+            "applicable_now": true,
+            "discriminating_now": false,
+            "already_reply": null,
+            "precondition": "已经排除底盘与脚架松脱并确认直立",
+            "precondition_met": true,
+            "recommendation": "本单没有摇晃症状，C3 不能区分当前的换件决定，无需安排。"
+          },
+          {
+            "id": "C4",
+            "channel": "到店",
+            "effort": 8,
+            "instruction": "由维修员固定椅身后用批次卡对照底盘开口，必要时读取转接座刻印。",
+            "safe_for_all": true,
+            "applicable_now": true,
+            "discriminating_now": true,
+            "already_reply": null,
+            "recommendation": "到店/上门由维修员固定椅身后终核：批次卡对底盘开口、J03 刻印、底盘与脚架紧固/松脱。"
+          }
+        ],
+        "next_remote_questions": [],
+        "optional_safe_checks": [],
+        "blocked_question_ids": [],
+        "has_decision_ambiguity": true,
+        "onsite_required_for_discrimination": false,
+        "onsite_confirmations": [
+          "用批次卡对照底盘开口，终核 CY-B17/C17/D18 与小口/大口（C4）",
+          "读取转接座刻印，确认 J03 到底在不在场（C4）"
+        ],
+        "current_safe_kit_names": [],
+        "compatibility_relevant": false
+      },
+      "retests": [],
+      "commitments": [],
+      "outbound": [],
+      "shipments": []
+    }
+  },
+  "delivery_dossiers": [
+    {
+      "order": "OX1",
+      "record": "S5",
+      "phase": "承诺",
+      "branch": "浅湾",
+      "chosen_parts": [
+        "R48",
+        "J03"
+      ],
+      "associated": "S2",
+      "associated_records": [
+        {
+          "source": "S2",
+          "phase": "来件",
+          "text": "师傅维修回单记得已拆下 F19，装的是 F20，初检抄牌 CY-C17。"
+        }
+      ],
+      "checks_passed_at_time": [
+        {
+          "reply": "A2",
+          "card": "C1",
+          "received": "2026-11-27",
+          "instruction": "站立查看靠背外露标签，抄完整铭牌，不推动座椅。",
+          "customer_text": "刚才对着灰牌读的是 C17，底盘没有挪过。"
+        }
+      ],
+      "record_text": "",
+      "engineering_basis": [
+        "I1",
+        "I2"
+      ],
+      "marketing_sources_not_authority": [
+        "I5"
+      ],
+      "shipments": [],
+      "retests": [
+        {
+          "source": "S7",
+          "text": "读到同批椅铭牌其实是 CY-D18，架仍为 F20。"
+        }
+      ]
+    },
+    {
+      "order": "OX4",
+      "record": "S6",
+      "phase": "出库",
+      "branch": "浅湾",
+      "chosen_parts": [
+        "R48",
+        "J03"
+      ],
+      "associated": null,
+      "associated_records": [],
+      "checks_passed_at_time": [
+        {
+          "source_record": "S6",
+          "kind": "初检",
+          "finding": "CY-C17，F20 脚架"
+        }
+      ],
+      "record_text": "初检 CY-C17，F20 脚架。",
+      "engineering_basis": [
+        "I1",
+        "I2"
+      ],
+      "marketing_sources_not_authority": [
+        "I5"
+      ],
+      "shipments": [
+        {
+          "id": "D1",
+          "order": "OX4",
+          "parts": [
+            "R48",
+            "J03"
+          ],
+          "branch": "浅湾"
+        }
+      ],
+      "retests": [
+        {
+          "source": "S8",
+          "text": "确认发给该客户的椅也是 CY-D18。"
+        }
+      ]
+    }
+  ],
+  "liaison": {
+    "shipped_cases": [
+      {
+        "order": "OX4",
+        "shipped": [
+          {
+            "id": "D1",
+            "order": "OX4",
+            "parts": [
+              "R48",
+              "J03"
+            ],
+            "branch": "浅湾"
+          }
+        ],
+        "outbound_records": [
+          {
+            "id": "S6",
+            "order": "OX4",
+            "phase": "出库",
+            "appointment": "2026-12-01",
+            "text": "初检 CY-C17，F20 脚架。",
+            "parts": [
+              "R48",
+              "J03"
+            ],
+            "branch": "浅湾"
+          }
+        ],
+        "confirmed_at_the_time": [
+          {
+            "variable": "plate",
+            "value": "CY-C17",
+            "source": "S6",
+            "provenance": "engineer_initial",
+            "detail": "初检 CY-C17，F20 脚架。",
+            "rank": 3,
+            "provenance_zh": "出库/初检确认"
+          },
+          {
+            "variable": "base",
+            "value": "F20",
+            "source": "S6",
+            "provenance": "engineer_initial",
+            "detail": "初检 CY-C17，F20 脚架。",
+            "rank": 3,
+            "provenance_zh": "出库/初检确认"
+          }
+        ],
+        "checks_passed_at_time": [
+          {
+            "source_record": "S6",
+            "kind": "初检",
+            "finding": "CY-C17，F20 脚架"
+          }
+        ],
+        "chosen_combo_at_branch": [
+          {
+            "order": "OX4",
+            "record": "S6",
+            "phase": "出库",
+            "branch": "浅湾",
+            "chosen_parts": [
+              "R48",
+              "J03"
+            ],
+            "associated": null,
+            "associated_records": [],
+            "checks_passed_at_time": [
+              {
+                "source_record": "S6",
+                "kind": "初检",
+                "finding": "CY-C17，F20 脚架"
+              }
+            ],
+            "record_text": "初检 CY-C17，F20 脚架。",
+            "engineering_basis": [
+              "I1",
+              "I2"
+            ],
+            "marketing_sources_not_authority": [
+              "I5"
+            ],
+            "shipments": [
+              {
+                "id": "D1",
+                "order": "OX4",
+                "parts": [
+                  "R48",
+                  "J03"
+                ],
+                "branch": "浅湾"
+              }
+            ],
+            "retests": [
+              {
+                "source": "S8",
+                "text": "确认发给该客户的椅也是 CY-D18。"
+              }
+            ]
+          }
+        ],
+        "later_findings": [
+          {
+            "variable": "plate",
+            "value": "CY-D18",
+            "source": "S8",
+            "provenance": "engineer_retest",
+            "detail": "确认发给该客户的椅也是 CY-D18。",
+            "rank": 4,
+            "provenance_zh": "工程复测（最高优先级）"
+          }
+        ],
+        "unsafe_assemblies_that_remain_possible": [
+          {
+            "world": {
+              "model_id": "M3",
+              "plate": "CY-D18",
+              "mouth": "large",
+              "base": "F20",
+              "adapter": true,
+              "rod": null
+            },
+            "proposed_kit_adds": [
+              "J03",
+              "R48"
+            ],
+            "note": "",
+            "problems": [
+              {
+                "code": "J03_D18_FORBIDDEN",
+                "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                "sources": [
+                  "I2"
+                ]
+              },
+              {
+                "code": "R48_D18_NO_LEGAL_ROUTE",
+                "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                "sources": [
+                  "I1",
+                  "I2"
+                ]
+              }
+            ]
+          },
+          {
+            "world": {
+              "model_id": "M3",
+              "plate": "CY-D18",
+              "mouth": "large",
+              "base": "F20",
+              "adapter": false,
+              "rod": null
+            },
+            "proposed_kit_adds": [
+              "J03",
+              "R48"
+            ],
+            "note": "即使该世界中 J03 原不在场，拟寄/已寄组合本身包含 J03，装上后仍形成禁用组合。",
+            "problems": [
+              {
+                "code": "J03_D18_FORBIDDEN",
+                "message": "标牌为 CY-D18 时 J03 也不得使用。",
+                "sources": [
+                  "I2"
+                ]
+              },
+              {
+                "code": "R48_D18_NO_LEGAL_ROUTE",
+                "message": "大口装 R48 必须配 J03 且脚架为 F20，但 CY-D18 又禁止 J03，因此 D18 没有使用 R48 的合规路径。",
+                "sources": [
+                  "I1",
+                  "I2"
+                ]
+              }
+            ]
+          }
+        ],
+        "marketing_claim_not_authority": [
+          {
+            "source": "I5",
+            "part": "J03",
+            "claim": "银弧座适配轻帆二代，旧椅也即插即用。",
+            "authority": "advertising"
+          }
+        ],
+        "liaison_options": [
+          "暂停使用该组合",
+          "安排上门检查/更换",
+          "继续观察（需记录理由）"
+        ],
+        "recommendation": "J03 在 CY-D18 上有明确工程禁用（I2），且 R48 大口路径又强制 J03（I1），属于工程通告禁止组合：建议联络员优先评估请客户暂停使用该椅/该组合，并尽快安排上门由维修员核对铭牌、底盘开口与刻印后更换为允许的大口直接组合（如 R52+F20）。不要远程引导客户自行拆除转接座或继续坐试。最终是否立即停用由联络员判定。",
+        "certain_now": [
+          "复测铭牌 CY-D18、大口底盘",
+          "J03 对 CY-D18 为工程禁用（I2）；营销页“适配轻帆二代/旧椅即插即用”（I5）不能覆盖"
+        ]
+      }
+    ],
+    "promised_holds": [
+      {
+        "order": "OX1",
+        "promised_parts": [
+          "R48",
+          "J03"
+        ],
+        "status_zh": "已承诺未寄出：挂起待工程复核，不得按原承诺发出",
+        "reason_codes": [
+          "J03_D18_FORBIDDEN",
+          "R48_D18_NO_LEGAL_ROUTE"
+        ]
+      }
+    ]
+  }
+}
